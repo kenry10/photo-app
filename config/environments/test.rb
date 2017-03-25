@@ -11,6 +11,9 @@ Rails.application.configure do
   # just for the purpose of running a single test. If you are using a tool that
   # preloads Rails for running tests, you may have to set it to true.
   config.eager_load = false
+ #May need to remove these 2 lines
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { :host => 'https://completerubyonrailscourse-kenry10.c9users.io' }
 
   # Configure static file server for tests with Cache-Control for performance.
   config.serve_static_files   = true
